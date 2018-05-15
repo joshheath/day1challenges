@@ -65,7 +65,7 @@ hash = {["Basingstoke and Deane", "Tadley South"]=>
     [[60000,
       "SP10 1JG",
       Date.parse("1995-06-23")]]}}
-
+# read the data from the hash and return it as an array
 def get_strings(hash)
   hashreturn = []
   hash.each do |key, value|
@@ -79,6 +79,7 @@ def get_strings(hash)
   return hashreturn
 end
 
+#take in the data as a hash and search through it before you output the result
 def search_strings(arr, search)
   #if search is equal to district or ward, print info
   arr.each do |array|
@@ -87,6 +88,7 @@ def search_strings(arr, search)
     end
   end
 end
+
 puts "Enter your search: "
 search = STDIN.gets.chomp
 search_strings(get_strings(hash), search)
