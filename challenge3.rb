@@ -3,6 +3,7 @@ require 'date'
 # A hash of all house prices and transactions
 # Data from the Land Registry and transformed through Postcodes.io
 
+#this is the hash that we'll be working with
 hash = {["Basingstoke and Deane", "Tadley South"]=>
   {:count=>1,
    :average=>94000,
@@ -65,6 +66,7 @@ hash = {["Basingstoke and Deane", "Tadley South"]=>
     [[60000,
       "SP10 1JG",
       Date.parse("1995-06-23")]]}}
+
 # read the data from the hash and return it as an array
 def get_strings(hash)
   hashreturn = []
